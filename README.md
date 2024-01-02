@@ -14,6 +14,6 @@
    - or manually enter a string yourself (within base32, hex rules)
 
 
-### String in mySecret is like a user ID, program will create 2FA code for specifically that person (id)
+### String in mySecret is like a user ID, program creates 2FA code for a specific user (ID)
 
 ### Program also will keep the logs of login attempts

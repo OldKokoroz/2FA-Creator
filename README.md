@@ -6,9 +6,6 @@
 ## Usage
     pip install pyotp
     pip install qrcode
-    
-
-String in mySecret is like a user ID, program will create 2FA code for specifically that person (id)
 
 
 ## To create 2FA Codes
@@ -16,5 +13,7 @@ String in mySecret is like a user ID, program will create 2FA code for specifica
    - disable reading section in main.py and enable create section for and create random base32, hex string
    - or manually enter a string yourself (within base32, hex rules)
 
+
+### String in mySecret is like a user ID, program will create 2FA code for specifically that person (id)
 
 ### Program also will keep the logs of login attempts

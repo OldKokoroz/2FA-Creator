@@ -4,7 +4,7 @@ from time import sleep, strftime, localtime
 import datetime
 
 # Creating a new Secret Key specific for you
-# everyone has to have different on
+# everyone has to have different one
 # secret = pyotp.random_base32()
 
 # Saving the Secret Key that just created
@@ -19,9 +19,8 @@ key.close()
 
 # Creating one time password and saving logs
 onetime = pyotp.TOTP(secret)
-
-
 onetime_now = str(onetime.now())
+
 currentDate = strftime("%d-%m-%Y - %H-%M-%S", localtime())
 
 # Getting Credentials
@@ -37,7 +36,6 @@ twofa.close()
 qrcode.make(onetime).save(f"{get_user}.png")
 
 trying = 1
-
 
 while True:
     if not onetime.verify(get_auth):

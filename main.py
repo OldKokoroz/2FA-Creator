@@ -29,10 +29,7 @@ get_pass = input("Password : ")
 get_auth = input("2FA Code : ")
 
 twofa = open("keyLogs", "a")
-timedCode = twofa.write(f"""
-     Date     |    User    |     Code 
-_____________   __________   ____________
-{currentDate} | {get_user} | {onetime_now}""" + "\n")
+timedCode = twofa.write(f"{currentDate} | {get_user} | {onetime_now}" + "\n")
 twofa.close()
 
 # Creating QR Based on the one time Password

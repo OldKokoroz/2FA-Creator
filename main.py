@@ -35,8 +35,7 @@ twofa.close()
 # Creating QR Based on the one time Password
 qrcode.make(onetime).save(f"{get_user}.png")
 
-trying = 1
-
+trying = 0
 while True:
     if not onetime.verify(get_auth):
         sleep(1)

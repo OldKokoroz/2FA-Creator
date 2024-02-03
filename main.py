@@ -1,7 +1,7 @@
 import pyotp
 import qrcode
 from time import sleep, strftime, localtime
-import datetime
+
 
 # Creating a new Secret Key specific for you
 # everyone has to have different one

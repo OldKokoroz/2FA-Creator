@@ -61,12 +61,6 @@ class Auth:
                 print("\nGood to go..")
                 exit()
 
-    def starter(self):
-        print("""
-1 - Login
-2
-""")
-
 runner = Auth()
 # runner.create_otp()
 runner.get_sec()

@@ -68,12 +68,7 @@ class Auth:
 """)
 
 runner = Auth()
-# login
-# if not in database create a new pass
-# if in
- 
-
-runner.create_otp()
+# runner.create_otp()
 runner.get_sec()
 runner.get_cred()
 runner.create_qr()
